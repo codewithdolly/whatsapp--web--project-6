@@ -1,0 +1,73 @@
+$whatsApp-color: #32a852;
+// $icon-color: rgb(0, 191, 165);
+$border: 0.5px solid gray;
+$text-Color: rgba(34, 34, 34, 0.685);
+
+.whatsapp {
+  background-color: rgb(24, 133, 118);
+  height: 127px;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.whatsappMain {
+  margin: 0 4.5% 0 4.5%;
+  border: $border;
+  height: 95vh;
+  margin-top: -6.7rem;
+  overflow: hidden;
+  display: flex;
+  background-color: white;
+  .whatsappMain--left {
+    width: 30%;
+    border-right: $border;
+    .whatsappMain--left--top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem;
+      background-color: menu;
+      .whatsappMain--left--top--icons {
+        color: $text-Color;
+        .whatsappMain--left--top--icons--icon {
+          padding-right: 25px;
+        }
+      }
+    }
+    .whatsappMain--left--searchbar {
+      background-color: menu;
+      height: 8vh;
+      align-items: center;
+      margin-top: -5px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(192, 192, 192, 0.349);
+      border-bottom: 1px solid rgba(192, 192, 192, 0.349);;
+      .whatsappMain--left--searchbar--search {
+        background-color: white;
+        padding: 5px;
+        padding-right: 10px;
+        margin: 10px;
+        border-radius: 20px;
+        .whatsappMain--left--searchbar--search--icon {
+          color: $text-Color;  
+          padding-right: 25px;
+          margin-left: 5px;
+          margin-bottom: -10px;
+
+        }
+        .whatsappMain--left--searchbar--search--imput {
+          outline: 0;
+          border: none;
+          padding: 5px;
+          padding-right: 100px;
+          
+          border-radius: 20px;
+
+        }
+      }
+    }
+  }
+  .whatsappMain--right {
+    width: 70%;
+  }
+}
