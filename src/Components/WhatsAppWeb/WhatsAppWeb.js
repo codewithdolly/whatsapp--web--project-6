@@ -7,7 +7,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchIcon from "@mui/icons-material/Search";
 import Sidebar from "./Sidebar/Sidebar";
 import profileImg from "../Images/dolly2.jpg";
-import ChatBox from "./ChatBox";
+import ChatBox from "./ChatBox/ChatBox";
 
 const WhatsAppWeb = () => {
   return (
@@ -39,17 +39,12 @@ const WhatsAppWeb = () => {
             </div>
           </div>
           {/* sidebar */}
-          <div  className="whatsappMain--left--chat">
-            <Sidebar />
-          </div>
+          <Sidebar />
         </div>
 
         <div className="whatsappMain--right">
-        {/* chaat box */}
-        <ChatBox />
-        
-        
-        
+          {/* chaat box */}
+          <ChatBox />
         </div>
       </div>
     </>

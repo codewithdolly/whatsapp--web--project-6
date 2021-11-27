@@ -1,7 +1,14 @@
 $whatsApp-color: #32a852;
 // $icon-color: rgb(0, 191, 165);
-$border: 0.5px solid gray;
+$border: 0.5px solid rgba(128, 128, 128, 0.253);
 $text-Color: rgba(34, 34, 34, 0.685);
+
+.body{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: menu;
+}
 
 .whatsapp {
   background-color: rgb(24, 133, 118);
@@ -13,9 +20,10 @@ $text-Color: rgba(34, 34, 34, 0.685);
 .whatsappMain {
   margin: 0 4.5% 0 4.5%;
   border: $border;
+  padding: 2px;
+  box-shadow: 3px 3px 5px rgba(192, 192, 192, 0.507);
   height: 95vh;
   margin-top: -6.7rem;
-  overflow: hidden;
   display: flex;
   background-color: white;
   .whatsappMain--left {

@@ -1,51 +1,58 @@
 $whatsApp-color: #32a852;
 // $icon-color: rgb(0, 191, 165);
 $border: 0.5px solid gray;
-$text-Color: rgba(34, 34, 34, 0.685);
+$text-Color: rgba(34, 34, 34, 0.918);
 
-.sidebar {
-  display: flex;
-  padding: 5px 15px 5px 15px;
-  justify-content: space-between;
-  color: $text-Color;
-  align-items: center;
-  border-bottom: .1px solid rgba(192, 192, 192, 0.253);
-  .sidebar--name {
+.sidebarLeft {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 75vh;
+  .sidebarLeft--sidebar {
     display: flex;
+    padding: 5px 15px 5px 15px;
+    justify-content: space-between;
+    color: $text-Color;
     align-items: center;
-    .sidebar--name,
+    // overflow-y: scroll;
+    border-bottom: 0.1px solid rgba(192, 192, 192, 0.253);
+    .sidebarLeft--sidebar--name {
+      display: flex;
+      align-items: center;
+      .sidebarLeft--sidebar--name,
+      p {
+        font-size: 14px;
+        margin-left: 1rem;
+        height: 13px;
+        .sidebarLeft--sidebar--name,
+        p,
+        .heart {
+          color: red;
+          margin-bottom: -5px;
+        }
+      }
+    }
+    .sidebarLeft--sidebar,
     p {
-      font-size: 14px;
-      margin-left: 1rem;
-      height: 13px;
-      .sidebar--name,
+      font-size: 10px;
+      .sidebar,
       p,
-      .heart {
-        color: red;
-        margin-bottom: -5px;
+      .pin {
+        font-size: 12px;
+        background-color: rgba(192, 192, 192, 0.541);
+        padding: 8px;
+        border-radius: 50px;
+        margin-left: 5px;
+        transform: rotate(20deg);
       }
     }
   }
-  .sidebar, p{
-      font-size: 10px;
-      .sidebar, p, .pin{
-        font-size: 12px;
-          background-color: rgba(192, 192, 192, 0.541);
-          padding: 8px;
-          border-radius: 50px;
-          margin-left: 5px;
-          transform: rotate(20deg)
-
-      }
-  }
 }
 
-.line{
-    // background-color: silver;
-    margin-left: 4.2rem;
+.line {
+  // background-color: silver;
+  margin-left: 4.2rem;
 }
 
-.sidebar:hover{
+.sidebarLeft--sidebar:hover {
   background-color: rgba(192, 192, 192, 0.171);
 }
-

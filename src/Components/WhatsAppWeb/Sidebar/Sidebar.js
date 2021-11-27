@@ -9,10 +9,10 @@ import DoneAllIcon from "@mui/icons-material/DoneAll";
 const Sidebar = () => {
   return (
     <>
-      <div style={{ overflowY: "scroll" }}>
+      <div className="sidebarLeft">
         {profiles.map((profile) => (
-          <div className="sidebar">
-            <div className="sidebar--name">
+          <div className="sidebarLeft--sidebar">
+            <div className="sidebarLeft--sidebar--name">
               <Avatar>
                 <img src={profile.img} alt={profile.alt} width="40px" />
               </Avatar>
@@ -33,7 +33,7 @@ const Sidebar = () => {
             </p>
           </div>
         ))}
-        <hr className="line" />
+        
       </div>
     </>
   );
@@ -60,7 +60,7 @@ const profiles = [
     nameIcon: <FavoriteIcon className="heart" />,
     date: "12:45 pm",
     pin: <PushPinIcon className="pin" />,
-    status: <DoneAllIcon sx={{ fontSize: "small", marginRight: "3px" }} />,
+    status: "",
     SentImg: <CameraAltIcon sx={{ fontSize: "small", marginRight: "3px" }} />,
     chat: "Photo",
   },
@@ -85,6 +85,16 @@ const profiles = [
     chat: "Hello Sir, Good Morning!",
   },
   {
+    name: "Kiran🎭 #Wipro",
+    img: `process.env.PUBLIC_URL + "../../Images/kiran.jpg`,
+    alt: "mom",
+    date: "20/11/2021",
+    pin: "",
+    status: "",
+    SentImg: "",
+    chat: "Hey dude",
+  },
+  {
     name: "Mr. DJ",
     img: `process.env.PUBLIC_URL + "../../Images/dj.jpg`,
     alt: "DJ",
@@ -93,6 +103,17 @@ const profiles = [
     status: "",
     SentImg: "",
     chat: "Good Morning",
+  },
+
+  {
+    name: "Women in Tech #Hyd",
+    img: `process.env.PUBLIC_URL + "../../Images/wordpress.jpg`,
+    alt: "wordpress",
+    date: "09/11/2021",
+    pin: "",
+    status: "",
+    SentImg: "",
+    chat: "+91 87908 25832 - www.crio.do/phonepe-tech-scholars-program/",
   },
 
   {
@@ -106,16 +127,6 @@ const profiles = [
     SentImg: <CameraAltIcon sx={{ fontSize: "small", marginRight: "3px" }} />,
     chat: "Photo",
   },
-  {
-    name: "Women in Tech #Hyd",
-    img: `process.env.PUBLIC_URL + "../../Images/wordpress.jpg`,
-    alt: "wordpress",
-    date: "09/11/2021",
-    pin: "",
-    status: "",
-    SentImg: "",
-    chat: "+91 87908 25832 - www.crio.do/phonepe-tech-scholars-program/",
-  },
 
   {
     name: "Bhavani @Avontix",
@@ -126,17 +137,6 @@ const profiles = [
     status: "",
     SentImg: <CameraAltIcon sx={{ fontSize: "small", marginRight: "3px" }} />,
     chat: "Photo",
-  },
-
-  {
-    name: "Kiran🎭 #Wipro",
-    img: `process.env.PUBLIC_URL + "../../Images/kiran.jpg`,
-    alt: "mom",
-    date: "20/11/2021",
-    pin: "",
-    status: "",
-    SentImg: "",
-    chat: "Hey dude",
   },
 
   {
@@ -193,7 +193,7 @@ const profiles = [
   },
   {
     name: "Smita @Avontix",
-    img: `process.env.PUBLIC_URL + "../../Images/smita.jpg`,
+    img: `process.env.PUBLIC_URL + "../../Images/samita.jpg`,
     alt: "Smita",
     date: "12/10/2021",
     pin: "",

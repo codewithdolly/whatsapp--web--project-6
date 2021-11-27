@@ -1,0 +1,84 @@
+.chat {
+  width: 100%;
+  .chat--chatBox {
+    display: flex;
+    padding: 3px 20px 3px 20px;
+    justify-content: space-between;
+    background-color: menu;
+    align-items: center;
+    .chat--chatBox--name {
+      display: flex;
+      align-items: center;
+      .chat--chatBox--name,
+      p {
+        margin-left: 10px;
+      }
+      .heart {
+        color: red;
+        margin-bottom: -5px;
+      }
+    }
+    .chat--chatBox--name--icon {
+      margin-right: 25px;
+    }
+  }
+  .chat--chatBox--bg {
+    background-image: url(../../Images/bg1.jpg);
+    padding: 3px 20px 3px 20px;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // -webkit-background-size: cover;
+    // background-size: cover;
+
+    height: 80vh;
+    .chat--chatBox--bg--date {
+      margin-top: 5px;
+      margin-bottom: 1rem;
+      padding: 8px 30px;
+      background-color: rgba(181, 223, 243, 0.671);
+      font-weight: 300;
+      border-radius: 10px;
+    }
+    .chat--chatBox--bg--Chats {
+      padding-right: 2%;
+      padding-left: 2%;
+      .chat--chatBox--bg--Chats--mom {
+        background-color: menu;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 3px;
+        .chat--chatBox--bg--Chats--mom--time {
+          font-size: 10px;
+          padding-left: 10px;
+          color: gray;
+        }
+      }
+      .chat--chatBox--bg--Chats--me {
+        background-color: menu;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+        float: right;
+        .chat--chatBox--bg--Chats--me--time {
+          font-size: 10px;
+          padding-left: 10px;
+          color: gray;
+        }
+      }
+      .chat--chatBox--bg--Chats--img {
+        width: 250px;
+        border-radius: 10px;
+        border: white 2px solid;
+        margin-top: 7rem;
+        background-color: white;
+        color: rgb(13, 221, 13);
+      }
+      .chat--chatBox--bg--Chats--mom--time{
+        font-size: 10px;
+        padding-left: 5px;
+        color: gray;
+      }
+    }
+  }
+}

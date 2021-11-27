@@ -1,0 +1,25 @@
+.InputBox{
+    // background-color: menu;
+    height: 10.5vh;
+    width: 100%;
+    background-color: menu;
+    margin-top: -1.8rem;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 4px;
+    // padding-right: 1rem;
+    .InputBox--chat{
+        .InputBox--chat--input{
+            color: green;
+            outline: none;
+            border: none;
+            padding: 1rem;
+            padding-right: 40rem;
+            border-radius: 20px;
+            
+        }
+    }
+}
